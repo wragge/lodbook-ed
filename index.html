@@ -1,27 +1,37 @@
 ---
 layout: default
-title: "Ed."
+title: "Home"
 ---
 <div class="introduction">
-  <h1>Hi.</h1>
 
-<p>Ed is a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme designed for textual editors based on <a href="http://go-dh.github.io/mincomp/">minimal computing principles</a>, and focused on legibility, durability, ease and flexibility. Our underlying technology is easy to learn and teach, and can produce beautifully rendered scholarly or reading editions of texts meant to last. To start using Ed, please see <a href="{{ site.baseurl }}/documentation/">our documentation</a> for installation instructions and more. To learn more about the ideas behind Ed and a list of current features see our <a href="{{ site.baseurl }}/about/">about</a> section. To see Ed in action, we've provided some sample minimal editions for you below.</p>
-</div>
+<p class="citation"> by {{ site.author.name }}</p>
 
-<hr>
+{% if site.status %}
+  <p><i>{{ site.status }}</i></p>
+{% endif %}
+
+<p>In 1908 James Minahan arrived in Australia after 26 years in China. Born in Melbourne, as a small boy he was taken by his Chinese father to live in his ancestral village in rural Guangdong to be educated in Chinese. Growing up in China James remembered little of the country of his birth or of his Irish-Australian mother, but Australia was always part of his plans for the future. His father had kept shares in the store he had run on the Indigo goldfields in the 1870s and, as an adult, James planned to return there.</p>
+
+<p>What he found on his arrival in the newly federated Australia, however, was that being born in Australia did not guarantee a right to live there if you were deemed to be Chinese. No longer able to speak the English of his Victorian childhood, James was made to sit the infamous Dictation Test, which he failed. After he was arrested as a prohibited immigrant, the Chinese community rallied around him and began legal proceedings to have him released. James Minahan’s case made it all the way to the High Court of Australia, who ruled in his favour. He was allowed to remain in Australia.</p>
+
+<p>A century later, the High Court’s decision in Potter v. Minahan continues to inform the legal interpretation of what it means to be an Australian. Who is an immigrant? Who is a member of the Australian community? Who belongs? Who doesn’t?</p>
 
 <div class="toc">
-  <h2>Sample texts</h2>
+  <h2>Contents</h2>
   <ul class="post">
-  {% for item in site.texts do %}
+  {% for item in site.texts %}
   
     <li class="post-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
+        Chapter {{ item.chapter }} &mdash; {{ item.title }}
       </a>
     </li>
   {% endfor %}
   </ul>  
+
+<hr>
+
+<p>This site is an experiment in using <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/elotroalex/ed">Ed</a> to publish narratives enriched with Linked Open Data. It's the latest in a series of ongoing experiments documented in Tim Sherratt's <a href="https://timsherratt.org/research-notebook/projects/lodbooks/">research notebook</a>.<p>
 
 </div>
 

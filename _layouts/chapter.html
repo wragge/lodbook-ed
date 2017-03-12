@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="narrative">
+  <h1 class="post-title">Chapter {{ page.chapter }} &mdash; {{ page.title }}</h1>
+  <p class="citation"> by {{ page.author }}</p>
+  {% if site.status %}
+    <p><i>{{ site.status }}</i></p>
+  {% endif %}
+  {{ content | lod_ids | lod_labels }}
+</div>
+
+{{ page | lod_mentions }}
+
+{{ page | lod_references }}

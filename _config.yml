@@ -1,17 +1,17 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               LODBook-Ed
-tagline:             'Linked Open Data for writers and historians'
+title:               "James Minahan's Homecoming"
+tagline:             'A story of race and belonging in White Australia'
 description:         'An attempt to use Jekyll and Ed. to publish narratives enriched with Linked Open Data'
 url:                 'http://wragge.github.io'
 baseurl:             '/lodbook-ed'
+status:              'Draft only, March 2017'
 
 # About/contact
 author:
-  name:              Tim Sherratt
-  url:               https://twitter.com/wragge
-  email:             tim@discontents.com.au
+  name:              Kate Bagnall
+  url:               https://twitter.com/baibi
 
 # Permalinks
 

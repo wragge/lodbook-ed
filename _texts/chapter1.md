@@ -1,11 +1,10 @@
 ---
-layout: narrative
-title: "James Minahan’s Homecoming: A story of race and belonging in White Australia"
+layout: chapter
+chapter: 1
+title: "An unexpected welcome"
 author: Kate Bagnall
 publication-date: 2016
 ---
-
-## Chapter 1 -- AN UNEXPECTED WELCOME
 
 The letter {{"James Minahan" | lod_link: "" }} was waiting for had arrived at last. Sent from the firm of {{"Quong Hing Yeong" | lod_link: ""}} in Hong Kong, the letter contained the news that having received a remittance of HK$200 from Australia they could now book him a passage to Melbourne, the city of his birth. At 31 years old, James had decided to return to Australia after twenty-six years in China. He had spent the last decade studying for the imperial examinations (kējǔ) but after three unsuccessful attempts to gain a degree he had decided to try his luck in business in Australia instead.
 
