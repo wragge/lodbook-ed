@@ -1,0 +1,21 @@
+---
+layout: default
+filename: index.html
+---
+
+<h2>{{ page.title }}</h2>
+
+<p>{{ page.data.description }}</p>
+
+{% if page.data.knows %}
+<ul>
+{% for knows in page.data.knows %}
+    <li><a href="{{ site.baseurl }}/{{ knows.collection }}/{{ knows.name | slugify }}/">{{ knows.name }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+
+{{ page | jsonldify }}
+
+

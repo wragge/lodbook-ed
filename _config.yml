@@ -1,17 +1,17 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               Ed.
-tagline:             'A Jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
-url:                 'http://elotroalex.github.io'
-baseurl:             '/ed'
+title:               LODBook-Ed
+tagline:             'Linked Open Data for writers and historians'
+description:         'An attempt to use Jekyll and Ed. to publish narratives enriched with Linked Open Data'
+url:                 'http://wragge.github.io'
+baseurl:             '/lodbook-ed'
 
 # About/contact
 author:
-  name:              Alex Gil
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+  name:              Tim Sherratt
+  url:               https://twitter.com/wragge
+  email:             tim@discontents.com.au
 
 # Permalinks
 
@@ -25,6 +25,22 @@ encoding: utf-8
 collections:
   texts:
     output: true
+
+page_gen-dirs: true
+page_gen:
+  - data: 'data'
+    name: 'name'
+
+data_types:
+  people:
+    template: 'person'
+    dir: 'people'
+    type: 'http://schema.org/Person'
+  organisations:
+    template: 'organisation'
+    dir: 'organisations'
+    type: 'http://schema.org/Organization'
+
 
 # Markdown specs
 markdown: kramdown

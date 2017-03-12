@@ -1,0 +1,25 @@
+- name: James Minahan
+  collection: people
+  data:
+      description: ""
+      parent:
+        - name: Cheong Ming
+          collection: people
+      knows:
+        - name: JTT Donohoe
+          collection: people
+- name: Cheong Ming
+  collection: people
+  data:
+      description: ""
+      child:
+        -  name: James Minahan
+           collection: people
+- name: JTT Donohoe
+  collection: people
+  data: 
+      description: ""
+- name: Quong Hing Yeong
+  collection: organisations
+  data:
+    description: ""

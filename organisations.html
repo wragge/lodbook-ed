@@ -1,0 +1,10 @@
+---
+layout: page
+title: Organisations
+---
+
+<ul>
+{% for org in site.data.organisations %}
+<li><a href="{{ org.name | slugify}}/">{{ org.name }}</a></li>
+{% endfor %}
+</ul>
